@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | RC WEB X</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-pink-500 selection:text-white">
+
+    <!-- Preloader & Cursor -->
+    <div id="preloader"><div class="loader-circle"></div></div>
+    <div class="cursor-dot hidden md:block"></div><div class="cursor-outline hidden md:block"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-12">
+                <a href="index.html" class="flex items-center gap-2 hover-target">
+                    <div class="w-10 h-10 rounded-xl bg-gradient flex items-center justify-center font-bold text-xl text-white shadow-lg shadow-indigo-500/30">RC</div>
+                    <span class="font-extrabold text-2xl tracking-wider text-white">WEB <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-500">X</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-slate-300 font-medium text-sm uppercase tracking-widest hover:text-white">Home</a>
+                    <a href="about.html" class="nav-link text-slate-300 font-medium text-sm uppercase tracking-widest hover:text-white">About</a>
+                    <a href="services.html" class="nav-link text-slate-300 font-medium text-sm uppercase tracking-widest hover:text-white">Services</a>
+                    <a href="portfolio.html" class="nav-link text-white font-medium text-sm uppercase tracking-widest active">Portfolio</a>
+                    <a href="contact.html" class="nav-link text-slate-300 font-medium text-sm uppercase tracking-widest hover:text-white">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-pink-500 focus:outline-none"><i class='bx bx-menu text-3xl'></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass border-t border-slate-700/50 mt-4 absolute w-full left-0">
+            <div class="px-4 py-6 space-y-4 flex flex-col">
+                <a href="index.html" class="text-slate-300 hover:text-pink-500 font-medium uppercase tracking-wider block">Home</a>
+                <a href="about.html" class="text-slate-300 hover:text-pink-500 font-medium uppercase tracking-wider block">About</a>
+                <a href="services.html" class="text-slate-300 hover:text-pink-500 font-medium uppercase tracking-wider block">Services</a>
+                <a href="portfolio.html" class="text-white hover:text-pink-500 font-medium uppercase tracking-wider block">Portfolio</a>
+                <a href="contact.html" class="text-slate-300 hover:text-pink-500 font-medium uppercase tracking-wider block">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-pink-900/10 to-indigo-900/10 z-0"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center" data-aos="fade-up">
+            <h1 class="text-5xl font-extrabold mb-4">Our <span class="text-gradient">Masterpieces</span></h1>
+            <p class="text-slate-400 max-w-2xl mx-auto">Explore a curated selection of our finest digital creations.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10">
+            
+            <!-- Project 1 -->
+            <div class="portfolio-card relative rounded-2xl overflow-hidden glass border border-slate-700/50 group" data-aos="fade-up">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/rcmobile.jpg" alt="R.C. Mobile Store" class="w-full h-full object-cover portfolio-img object-top bg-slate-900">
+                </div>
+                <div class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent flex flex-col justify-end p-8">
+                    <span class="text-cyan-400 font-semibold text-sm mb-2 uppercase tracking-wider">E-Commerce Tech Shop</span>
+                    <h3 class="text-3xl font-bold text-white mb-2">R.C. MOBILE</h3>
+                    <p class="text-slate-300 mb-4 text-sm">A modern, premium online store for mobile technology, featuring secure purchasing and device showcasing.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-card relative rounded-2xl overflow-hidden glass border border-slate-700/50 group" data-aos="fade-up" data-aos-delay="100">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/nkpet.jpg" alt="N.K. PET" class="w-full h-full object-cover portfolio-img object-top bg-slate-900">
+                </div>
+                <div class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent flex flex-col justify-end p-8">
+                    <span class="text-orange-400 font-semibold text-sm mb-2 uppercase tracking-wider">Pet Store Platform</span>
+                    <h3 class="text-3xl font-bold text-white mb-2">N.K. PET</h3>
+                    <p class="text-slate-300 mb-4 text-sm">An interactive, heartwarming pet shop platform directly linking loving families with their perfect pet matches.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="portfolio-card relative rounded-2xl overflow-hidden glass border border-slate-700/50 group lg:col-span-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="aspect-[21/9] overflow-hidden">
+                    <img src="images/keshi.jpg" alt="kESHI Skincare" class="w-full h-full object-cover portfolio-img object-top bg-slate-900">
+                </div>
+                <div class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent flex flex-col justify-end p-8">
+                    <span class="text-pink-400 font-semibold text-sm mb-2 uppercase tracking-wider">Beauty & Cosmetics Brand</span>
+                    <h3 class="text-3xl font-bold text-white mb-2">kESHI Cream</h3>
+                    <p class="text-slate-300 mb-4 text-sm max-w-2xl">A luxurious display for a premium skincare brand, emphasizing natural radiance and seamless e-commerce conversions.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer class="bg-black/40 border-t border-slate-800 py-8 text-center mt-20">
+        <p class="text-slate-500 text-sm">&copy; 2026 RC WEB X. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>AOS.init({ once: true, offset: 50 });</script>
+</body>
+</html>
